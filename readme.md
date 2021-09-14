@@ -11,7 +11,7 @@ Defend additions to your forked modlists while updating from the master branch
 4. Run the wabbajack update
 5. Close mod organizer, copy "remove_nodelete.sh" into your mods folder, and run it from a bash shell. This does undoes the changes made by add_nodelete.sh
 6. Make any manual updates required (e.g. regenerating forked LODS because the list added or removed dyndolod.esp dependencies, updating conflict patches because the master list added something, etc)
-7. Recompile your modlist with wabbajack
+7. 6. Delete remove_nodelete.sh from your mods folder (the updater should have already delted add_nodelete.sh), and recompile your modlist with wabbajack
 
 Obviously, this won't protect changes you make to parent files. If you have modified the parent conflict patches instead of making a new one, regenerated LOD or nemesis to the same output folder, wabbajack will remove those changes. You should rename the folders manually to something different, so it will overwrite the mod from the parent modlist, instead of changing the existing one.
 
